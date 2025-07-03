@@ -255,6 +255,7 @@ video{
 
 .block1 figure{
     margin-right: 60px;
+    margin-top: 10px;
 }
 
 .marathon__img{
@@ -272,6 +273,7 @@ video{
 .block2{
     display: flex;
     flex-direction: row;
+    margin-bottom: 10px;
 }
 
 .block2 figure {
@@ -580,12 +582,17 @@ video{
     justify-content: center !important;
     }
 
+    .career-blurb figure{
+        margin-left: 0;
+        align-items: center;
+    }
+
     .headshot{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-right: 80px
+        /* padding-right: 60px */
     }
 
     .headshot__img {
@@ -748,9 +755,10 @@ video{
     position: static;
     }
 
-    /* .headshot {
-        margin-right: 60px
-    } */
+    .career-blurb figure{
+        margin-left: 0;
+        align-items: center;
+    }
 
     .capstone-content {
         display: flex;
@@ -847,6 +855,20 @@ video{
         margin-right: 40px;
         height: auto;
         border-radius: 20px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .career-blurb {
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center;
+    position: static;
+    }
+
+    .career-blurb figure{
+        margin-left: 60px;
         align-items: center;
     }
 }
