@@ -231,16 +231,11 @@ video{
 }
 
 /* Contact info */
-.social__icon--link{
-    color:#393939;
-    font-size: 24px;
-    z-index: 10;
-}
 
 .social__media{
     max-width: 1000px;
     width: 100%;
-    padding: 10px 60px;
+    padding: 10px 0;
 }
 
 .social__icons {
@@ -249,6 +244,15 @@ video{
     width: 100px;
     gap: 10px;
     cursor: pointer;
+}
+
+.social__icon--link{
+    color:#393939;
+    font-size: 24px;
+}
+
+.social__icon--link:hover{
+    color: blueviolet;
 }
 
 .aboutme{
@@ -325,6 +329,10 @@ video{
     /* border-radius: 20px; */
     position: relative;
     object-fit: cover;
+}
+
+.tuhh-article{
+    color:#393939;
 }
 
 .tuhh-article:hover{
@@ -502,8 +510,7 @@ video{
 /* Contact section -- essentially a footer*/
 .main#contact{
     display: flex;
-    flex-direction: column ;
-    position: relative;
+    flex-direction: column;
     border-style: none;
     border-radius: none;
     margin-bottom: none;
@@ -512,31 +519,44 @@ video{
     margin: 0;
 }
 
+.main#contact h3{ 
+    margin-left: 0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main#contact p{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main#contact a{
+    color: #393939;
+}
+
+.main#contact a:hover{
+    color: blueviolet;
+}
+
 .social__media__ft{
     display: flex;
     position: relative;
-    max-width: 1000px;
-    width: 100%;
-    padding: 10px 60px;
-    justify-content: center;
-    /* align-items: center; */
-    /* margin-top: 50%; */
-    margin: 0;
 }
 
 .social__icons__ft{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 300px;
-    gap: 30px;
     cursor: pointer;
 }
 
 .social__icon--link-ft{
     color:#393939;
     font-size: 45px;
-    justify-content: center;
+}
+
+.social__icon--link-ft:hover{
+    color:blueviolet;
 }
 
 /* Mobile Responsive */
