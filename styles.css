@@ -147,7 +147,7 @@ video{
 
 }
 .gradient__text{
-    background-image: linear-gradient(to top, #1d91c0 100%, #c7e9b4 25%);
+    background-image: linear-gradient(to top, #013d46 100%, #013d46 25%);
     text-decoration: none;
     -webkit-background-clip: text;
     -moz-background-clip: text;
