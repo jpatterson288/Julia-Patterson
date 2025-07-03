@@ -720,7 +720,7 @@ video{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     .navbar{
         font-size: 1.1rem;
         margin-top: -10px;
@@ -751,7 +751,7 @@ video{
 
     .capstone-content {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 20px;
         padding: 20px;
         align-items: center;
@@ -765,9 +765,11 @@ video{
     flex-direction: column;
     align-items: center;
     }
+    
     .tuhh-pics{
-    flex-direction: column;
-    align-items: center; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
     }
 
     .kaolinite__img,
@@ -776,21 +778,29 @@ video{
     height: auto;
     }
 
+    .housesitting-locs{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
     .housesitting-content,
     .wwoof-content{
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .housesitting-locs,
     .wwoof-locs{
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .lacumbre,
     .elbolson{
         max-width: 100%;
     }
+}
