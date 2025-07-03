@@ -25,6 +25,13 @@ body{
     overflow-x: hidden;
     color:#393939 !important;
     font-size: 1rem;
+    pointer-events: none;
+    user-select: none;
+}
+
+a, iframe, embed{
+    pointer-events: auto;
+    user-select: auto;
 }
 
 body::before{
