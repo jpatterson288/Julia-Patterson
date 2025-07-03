@@ -96,7 +96,7 @@ video{
     transform: rotate(90deg);
     transform-origin: left top;
     left: 100%; 
-    top: 40%;
+    top: 50%;
     font-size: 1.8rem;
     color:#393939;
     text-wrap: nowrap;
@@ -734,7 +734,7 @@ video{
     font-size: 1.2rem;
     margin: 10px 0;
     text-wrap: wrap;
-    margin-left: 10px;
+    margin-left: 60px;
     margin-right: 10px;
     }
 
@@ -779,13 +779,15 @@ video{
     }
 
     .housesitting-locs{
-        /* flex-direction: column; */
         flex-wrap: wrap;
+    }
+
+    .housesitting-locs figure{
+        width: 90%;
     }
 
     .housesitting-content,
     .wwoof-content{
-        /* flex-direction: column; */
         align-items: center;
         align-items: center;
         flex-wrap: wrap;
@@ -793,14 +795,55 @@ video{
 
     .housesitting-locs,
     .wwoof-locs{
-        /* flex-direction: column; */
         align-items: center;
         align-items: center;
         flex-wrap: wrap;
+        margin-top: 10px;
     }
 
     .lacumbre,
     .elbolson{
         max-width: 100%;
+    }
+
+    .lacumbre figure,
+    .elbolson figure {
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    }
+
+    .lacumbre__img,
+    .elbolson__img,
+    .housesitting__img {
+        display: flex;
+        width: 80%;
+        margin-right: 40px;
+        margin-left: 60px;
+        height: auto;
+        border-radius: 20px;
+        align-items: center;
+    }
+
+    .coolpics{
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: center;
+    }
+
+    .coolpics figure {
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    }
+
+    .coolpics__img {
+        width: 90%;
+        margin-right: 40px;
+        height: auto;
+        border-radius: 20px;
+        align-items: center;
     }
 }
