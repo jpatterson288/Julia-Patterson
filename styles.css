@@ -306,7 +306,6 @@ video{
     flex-direction: column;
     align-items: center;
     margin-top: auto;
-    max-width: 400px;
 }
 
 .mapthesystem__img{
@@ -630,6 +629,10 @@ video{
     align-items: center;
     }
 
+    .vid iframe{
+        width: 100%;
+    }
+
     .mapthesystem__img {
     width: 100%;
     height: auto;
@@ -845,5 +848,34 @@ video{
         height: auto;
         border-radius: 20px;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+    .capstone-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        align-items: center;
+    }
+    .mapthesystem__img {
+        width: 50%;
+        height: auto;
+    }
+
+    .tuhh-content{
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .tuhh-pics{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    }
+    
+    .vid iframe{
+        width: 100%;
     }
 }
