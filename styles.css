@@ -123,6 +123,7 @@ video{
     padding: 10px 0 10px 0;
     margin: 0 60px;
     line-height: 1.5;
+    color: #393939;
 }
 
 /* Navigation bar customization */
@@ -188,7 +189,7 @@ video{
 }
 
 .navbar__links{
-    color: #3f0079;
+    color: #3b0172;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,7 +253,7 @@ video{
 }
 
 .social__icon--link:hover{
-    color: blueviolet;
+    color: #3b0172;
 }
 
 .aboutme{
@@ -336,7 +337,7 @@ video{
 }
 
 .tuhh-article:hover{
-    color: blueviolet;
+    color: #3b0172;
     background-image: url("/images/marathong.jpeg");
 }
 
@@ -374,7 +375,7 @@ video{
 .housesitting-locs{
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 10px;
     justify-content: center;
     margin-top: 20px;
     width: 100%;
@@ -395,6 +396,7 @@ video{
     height: 350px;
     object-fit: cover;
     border-radius: 20px;
+    margin-top: 10px;
 }
 
 .switzerland, 
@@ -418,9 +420,7 @@ video{
 .wwoof-locs{
     display: flex;
     flex-direction: row;
-    gap: 40px;
     justify-content: center;
-    /* margin-top: 20px; */
     width: 100%;
 }
 
@@ -455,6 +455,7 @@ video{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .wwoof__img#cutting,
@@ -503,10 +504,6 @@ video{
     height: auto;
 }
 
-.coolpics__img#lighthamburg{
-    height: auto;
-}
-
 /* Contact section -- essentially a footer*/
 .main#contact{
     display: flex;
@@ -535,7 +532,7 @@ video{
 }
 
 .main#contact a:hover{
-    color: blueviolet;
+    color: #3b0172;
 }
 
 .social__media__ft{
@@ -556,7 +553,7 @@ video{
 }
 
 .social__icon--link-ft:hover{
-    color:blueviolet;
+    color:#3b0172;
 }
 
 /* Mobile Responsive */
@@ -758,6 +755,7 @@ video{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+
     .navbar{
         font-size: 1.1rem;
         margin-top: -10px;
