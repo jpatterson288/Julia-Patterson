@@ -25,8 +25,8 @@ body{
     overflow-x: hidden;
     color:#393939 !important;
     font-size: 1rem;
-    pointer-events: none;
-    user-select: none;
+    /* pointer-events: none;
+    user-select: none; */
 }
 
 a, iframe, embed{
@@ -50,6 +50,8 @@ figure{
     max-width: 300px;
     text-align: center;
     padding: 5px 5px;
+    pointer-events: none;
+    user-select: none;
 }
 
 figcaption{
@@ -61,6 +63,7 @@ figcaption{
     height: auto;
     text-wrap: wrap;
     max-width: 225px;
+    margin-top: 10px
 }
 
 /* footer {
@@ -72,6 +75,11 @@ figcaption{
 
 video{
     max-width: 300px;
+}
+
+li span{
+    position: relative;
+    left
 }
 
 /* So that all sections look the same */
@@ -89,24 +97,26 @@ video{
 
 .main h1{
     position: absolute;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(-50%, -0);
     transform-origin: left top;
     left: 0;
     top: 50%;
     font-size: 1.8rem;
     color:#393939;
     text-wrap: nowrap;
+    letter-spacing: 10px;
 }
 
 .main h2{
     position: absolute;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translate(-50%, -0);
     transform-origin: left top;
     left: 100%; 
     top: 50%;
     font-size: 1.8rem;
     color:#393939;
     text-wrap: nowrap;
+    letter-spacing: 15px;
 }
 
 .main h3{ 
@@ -114,7 +124,7 @@ video{
     color:#393939;
     text-wrap: nowrap;
     margin-left: 60px;
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 .main p{
@@ -304,6 +314,71 @@ video{
     object-fit: cover;
 }
 
+/* Work Experience section */
+
+.main#work-exp{
+    min-height: 600px;
+}
+
+.main#work-exp h4{
+    margin-left: 60px;
+    color: #3b0172;
+}
+
+.main#work-exp h5{
+    margin-left: 60px;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.sub-position-website{
+    color: #393939;
+}
+
+.main#work-exp i{
+    color: #3b0172;
+}
+
+.main#work-exp i:hover{
+    color: #393939;
+}
+
+.leadership{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.leadership h4{
+    margin-top: 0px;
+}
+
+.jobtitle-skills p{
+    font-style: italic;
+}
+
+.leadership li{
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 1.5;
+}
+
+.sub-positions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sub-position-link i{
+    color: #393939 !important;
+}
+
+.sub-position-link i:hover{
+    color: #3b0172 !important;
+}
+
 /* Project sections */
 
 .capstone-content{
@@ -344,24 +419,64 @@ video{
 .tuhh-content{
     display: flex;
     flex-direction: row;
+    align-items: top;
 }
 
 .tuhh-pics{
     display: flex;
     gap: 40px;
     width: 100%;
-    padding: 10px 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
-.kaolinite__img{
+.casagrande__img{
     height: 400px;
     width: 300px;
     position: relative;
     object-fit: cover;
 }
 
-.lidar__img{
+.sedimentation__img{
     height: 400px;
+    width: 300px;
+    position: relative;
+    object-fit: cover;
+}
+
+.ewb-content{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.ewb-pics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ewb-pics p{
+    font-size: 0.8rem;
+}
+
+.example-graphics{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 40px;
+    width: 100%;
+    padding: 0 60px;
+}
+
+.media1__img{
+    /* height: 400px; */
+    width: 300px;
+    position: relative;
+    object-fit: cover;
+}
+
+.media2__img{
+    /* height: 400px; */
     width: 300px;
     position: relative;
     object-fit: cover;
@@ -571,6 +686,7 @@ video{
     transform: none;
     text-align: center;
     margin-bottom: 10px;
+    letter-spacing: normal;
     }
 
     .main h3 {
@@ -653,6 +769,20 @@ video{
     margin-bottom: 15px;
     }
 
+    .main#work-exp h4{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    color: #3b0172;
+    }   
+
+    .sub-positions h5{
+        margin-left: 60px;
+        margin-right: 60px;
+        padding: 10px;
+    }
+
+
     .capstone-content {
     flex-direction: column;
     gap: 20px;
@@ -678,8 +808,23 @@ video{
     align-items: center; 
     }
 
-    .kaolinite__img,
+    .casagrande__img,
     .lidar__img {
+    width: 100%;
+    height: auto;
+    }
+
+    .ewb-content{
+    flex-direction: column;
+    align-items: center;
+    }
+    .ewb-pics{
+    flex-direction: column;
+    align-items: center; 
+    }
+
+    .media1__img,
+    .media2__img {
     width: 100%;
     height: auto;
     }
@@ -808,7 +953,7 @@ video{
     justify-content: center; 
     }
 
-    .kaolinite__img,
+    .casagrande__img,
     .lidar__img {
     width: 100%;
     height: auto;
