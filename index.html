@@ -18,33 +18,35 @@
     <div class="navbar__container">
         <div class="title">
             <div class="gradient__text">
-          <a href="index.html">JULIA PATTERSON</a>
+                <a href="index.html">JULIA PATTERSON</a>
             </div>
         </div>
 
-      <!-- Hamburger toggle -->
-        <div class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+      <!-- Toggle -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
 
       <!-- Navbar menu -->
         <ul class="navbar__menu">
         <li class="navbar__item">
-          <a href="#about" class="navbar__links">About me</a>
+            <a href="#about" class="navbar__links">About me</a>
         </li>
 
         <li class="navbar__item dropdown">
-          <a href="#work-exp" class="navbar__links">Experience</a>
-          <div class="dropdown-content">
+            <a href="#work-exp" class="navbar__links" id="nav-exp-down"><p>Experience</p><i class="fa-solid fa-caret-down"></i></a>
+            <a href="#work-exp" class="navbar__links" id="nav-exp-side"><p>Experience</p><i class="fa-solid fa-caret-right"></i></a>
+            <div class="dropdown-content">
             <a href="#coops">Co-op Positions</a>
             <a href="#leadership">Volunteer Positions</a>
-          </div>
+            </div>
         </li>
 
         <li class="navbar__item dropdown">
-          <a href="#projects" class="navbar__links">Projects</a>
+          <a href="#projects" class="navbar__links" id="nav-proj-down"><p>Projects</p><i class="fa-solid fa-caret-down"></i></a>
+          <a href="#projects" class="navbar__links" id="nav-proj-side"><p>Projects</p><i class="fa-solid fa-caret-right"></i></a>
           <div class="dropdown-content">
             <a href="#capstone">4th Year Project</a>
             <a href="#tuhh">TUHH Publication</a>
@@ -53,7 +55,8 @@
         </li>
 
         <li class="navbar__item dropdown">
-          <a href="#workaway" class="navbar__links">Volunteer Travel</a>
+          <a href="#workaway" class="navbar__links" id="nav-volunteer-down"><p>Volunteer Travel</p><i class="fa-solid fa-caret-down"></i></a>
+          <a href="#workaway" class="navbar__links" id="nav-volunteer-side"><p>Volunteer Travel</p><i class="fa-solid fa-caret-right"></i></a>
           <div class="dropdown-content">
             <a href="#housesitting">TrustedHousesitters</a>
             <a href="#wwoof">WWOOF</a>
@@ -507,5 +510,6 @@
 <footer>
     <p>© Julia Patterson 2025.</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
