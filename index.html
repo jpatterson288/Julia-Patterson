@@ -14,35 +14,64 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar__container"> <!-- overall navagation bar -->
-            <div class="title">
-                <div class="gradient__text">
-                    <a href="Jindex.html">JULIA PATTERSON</a>
-                </div>
+    <div class="navbar__background"></div>
+    <div class="navbar__container">
+        <div class="title">
+            <div class="gradient__text">
+          <a href="index.html">JULIA PATTERSON</a>
             </div>
-            <ul class="navbar__menu"> 
-                <li class="navbar__item">
-                    <a href="#about" class="navbar__links">About me</a>
-                </li>
-                <li class="navbar__item"> 
-                    <a href="#work-exp" class="navbar__links">Experience</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#projects" class="navbar__links">Projects</a>
-                </li>
-                <li class="navbar__item"> 
-                    <a href="#workaway" class="navbar__links">Volunteer Travel</a>
-                </li>
-                <li class="navbar__item"> 
-                    <a href="#fun" class="navbar__links">Adventures</a>
-                </li>
-                <li class="navbar__item"> 
-                    <a href="#contact" class="navbar__links">Contact</a>
-                </li>
-            </ul>
         </div>
-    </nav> 
 
+      <!-- Hamburger toggle -->
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+      <!-- Navbar menu -->
+        <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links">About me</a>
+        </li>
+
+        <li class="navbar__item dropdown">
+          <a href="#work-exp" class="navbar__links">Experience</a>
+          <div class="dropdown-content">
+            <a href="#coops">Co-op Positions</a>
+            <a href="#leadership">Volunteer Positions</a>
+          </div>
+        </li>
+
+        <li class="navbar__item dropdown">
+          <a href="#projects" class="navbar__links">Projects</a>
+          <div class="dropdown-content">
+            <a href="#capstone">4th Year Project</a>
+            <a href="#tuhh">TUHH Publication</a>
+            <a href="#ewb">Graphic Design</a>
+          </div>
+        </li>
+
+        <li class="navbar__item dropdown">
+          <a href="#workaway" class="navbar__links">Volunteer Travel</a>
+          <div class="dropdown-content">
+            <a href="#housesitting">TrustedHousesitters</a>
+            <a href="#wwoof">WWOOF</a>
+          </div>
+        </li>
+
+        <li class="navbar__item">
+          <a href="#fun" class="navbar__links">Adventures</a>
+        </li>
+
+        <li class="navbar__item">
+          <a href="#contact" class="navbar__links">Contact</a>
+        </li>
+        </ul>
+    </div>
+    </nav>
+
+    <!-- Professional "about me" -->
     <div class="main" id="profesh-about">
         <h2>WHO AM I</h2>
         <div class="career-blurb">
@@ -85,6 +114,7 @@
         </div>
     </div>
 
+    <!-- Personal "about me" -->
     <div class="main" id="about">
         <h1>ABOUT ME</h1>
         
@@ -109,51 +139,51 @@
         </div>
     </div>
 
+    <!-- Experience -->
     <div class="main" id=work-exp>
         <h2>EXPERIENCE</h2>
-        <div class="co-ops">
+        <!-- co-ops -->
+        <div class="co-ops" id="coops">
             <h3>Co-op Positions</h3>
             <div class="emnandi">
                 <div class="jobtitle-skills">
                     <h4>Placement Student @ Emnandi Bioplastics 
                     <a href="https://www.linkedin.com/company/emnandi-bioplastics/" target="_blank"><i class="fab fa-linkedin"></i></a> X ASTUTE Centre of Excellence <a href="https://www.swansea.ac.uk/science-and-engineering/research/materials-manufacturing/astute/#:~:text=At%20the%20ASTUTE%20Centre%20of,technologies%20to%20complex%20manufacturing%20challenges" target="_blank"><i class="fa-solid fa-globe"></i></a> : Jan 2024 - June 2024</h4>
                 </div>
-                <p><strong>Skills:</strong> Experimental design, literature reviews, mechanical properties testing, LaTeX</p>
-                <p>Conducted mechanical testing on recycled PLA (DSC, MFI, tensile) and assisted with experimental planning and test parameter selection. To support ongoing research in sustainable bioplastics, performed a literature review on PLA and recycled PLA properties.</p>
+                <p><em><strong>Skills:</strong> Experimental design, literature reviews, mechanical properties testing, LaTeX </em><br> Conducted mechanical testing on recycled PLA (DSC, MFI, tensile) and assisted with experimental planning and test parameter selection. To support ongoing research in sustainable bioplastics, performed a literature review on PLA and recycled PLA properties.</p>
             </div>
             <div class="tuhh">
                 <div class="jobtitle-skills">
                     <h4>Research Assistant @ Techniche Universität Hamburg-Harburg <a href="https://www.linkedin.com/school/technische-universit%C3%A4t-hamburg/posts/?feedView=all" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://www.tuhh.de/gbt/willkommen" target="_blank"><i class="fa-solid fa-globe"></i></a>: May 2023 - Dec 2023</h4>
                     </div>
-                <p><strong>Skills:</strong> Python, data processing, academic research, geotechnical engineering lab tests, LiDAR scanning</p>
-                <p>Designed and executed geotechnical lab tests (e.g., Atterberg limits, triaxial, sedimentation), analyzing the results in Python, and preparing publication-ready data in addition to literature reviews. Additionally, worked with LiDAR scanning and used Python and MATLAB for point cloud visualization and analysis.</p>
+                <p><em><strong>Skills:</strong> Python, data processing, academic research, geotechnical engineering lab tests, LiDAR scanning</em><br>
+                Designed and executed geotechnical lab tests (e.g., Atterberg limits, triaxial, sedimentation), analyzing the results in Python, and preparing publication-ready data in addition to literature reviews. Additionally, worked with LiDAR scanning and used Python and MATLAB for point cloud visualization and analysis.</p>
             </div>
             <div class="zeton">
                 <div class="jobtitle-skills">
                     <h4>Project Engineering Student @ Zeton Inc. <a href="https://www.linkedin.com/company/zeton/posts/?feedView=all" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://www.zeton.com" target="_blank"><i class="fa-solid fa-globe"></i></a>: Sept 2022 - Dec 2022</h4>
                     </div>
-                <p><strong>Skills:</strong> AutoCAD P&ID, packaging and shipping, purchase orders, VBA for Excel</p>
-                <p>Working on the LanzaJet project, conducted instrument checks and tagging using P&IDs and 3D models, making necessary updates with AutoCAD. Streamlined label generation with Excel and VBA. Additionally, wrote purchase orders and assisted with packaging optimization for project shipping.</p>
+                <p><em><strong>Skills:</strong> AutoCAD P&ID, packaging and shipping, purchase orders, VBA for Excel </em><br> Working on the LanzaJet project, conducted instrument checks and tagging using P&IDs and 3D models, making necessary updates with AutoCAD. Streamlined label generation with Excel and VBA. Additionally, wrote purchase orders and assisted with packaging optimization for project shipping. </p>
             </div>
             <div class="eccc">
                 <div class="jobtitle-skills">
                     <h4>Engineering Student @ Environment and Climate Change Canada <a href="https://www.linkedin.com/company/environment-canada/posts/?feedView=all" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://www.canada.ca/en/environment-climate-change/services/managing-pollution/energy-production/fuel-regulations/clean-fuel-regulations.html" target="_blank"><i class="fa-solid fa-globe"></i></a>: Sept 2022 - Dec 2022</h4>
                     
                 </div>
-                <p><strong>Skills:</strong> ISO Standards, QA, verification and validation, accreditation, SOP development</p>
-                <p>Supported the Quality Assurance Program for the Clean Fuels Regulations by developing SOPs, internal guidance documents, and literature reviews, gaining experience in verification and validation, certification, risk assessments, compliance, and accrediting body requirements, and developed strong knowledge of relevant ISO standards, including those for LCA, GHGs, and environmental management.</p>
+                <p><em><strong>Skills:</strong> ISO Standards, QA, verification and validation, accreditation, SOP development</em><br>
+                    Supported the Quality Assurance Program for the Clean Fuels Regulations by developing SOPs, internal guidance documents, and literature reviews, gaining experience in verification and validation, certification, risk assessments, compliance, and accrediting body requirements, and developed strong knowledge of relevant ISO standards, including those for LCA, GHGs, and environmental management.</p>
             </div>
             <div class="snolab">
                 <div class="jobtitle-skills">
                     <h4>Research Assistent @ SNOLAB <a href="https://www.linkedin.com/company/snolab/posts/?feedView=all" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://www.snolab.ca" target="_blank"><i class="fa-solid fa-globe"></i></a>: May 2021 - August 2021</h4>
                     
                 </div>
-                <p><strong>Skills:</strong> Clean labs, QA, remote troubleshooting, controls testing</p>
-                <p>Worked with the Tellurium Development and R&D teams to support the commissioning of two underground Te plants through controls testing, chemical testing in the plants and QA testing. As part of the SNO+ collaboration, assisted with remote detector monitoring, hourly reporting, and project work during shifts.</p>
+                <p><em><strong>Skills:</strong> Clean labs, QA, remote troubleshooting, controls testing</em><br>
+                    Worked with the Tellurium Development and R&D teams to support the commissioning of two underground Te plants through controls testing, chemical testing in the plants and QA testing. As part of the SNO+ collaboration, assisted with remote detector monitoring, hourly reporting, and project work during shifts.</p>
             </div>
-
         </div>
-        <div class="leadership">
+        <!-- Volunteer -->
+        <div class="leadership" id="leadership">
             <h3>Volunteer and Leadership Roles</h3>
             <div class="engsoc">
                 <h4>University of Waterloo Engineering Society <a href="https://www.engsoc.uwaterloo.ca/" target="_blank"><i class="fa-solid fa-globe"></i></a></h4>
@@ -201,26 +231,41 @@
                     </div>
                 </div>
             </div>
+            <div class="coaching">
+                <h4>Kingston Striders Speed Skating Club <a href="https://speedskatingkingston.ca/" target="_blank"><i class="fa-solid fa-globe"></i></a></h4>
+                <div class="sub-positions">
+                    <div class="coach">
+                        <h5>Trained Assistant Coach</h5>
+                        <li>Assisted with supervision and ensured safety of up to 30 skaters in the development group, youth and adults</li>
+                        <li>Led weekly early morning practices of the advanced group with programming assistance from the head coach</li>
+                        <li>Planned and carried out lesson plans for youth learning to skate and speed skate over 8 month periods in the skating season</li>
+                        <li>Chauffeured and helped the young athletes at local competitions be on time and prepare for their races</li>
+                    </div>
+                </div>
+            </div>
             <div class="ewb">
                 <h4>Engineers Without Borders UW Chapter <a href="https://clubs.wusa.ca/club_listing/70" target="_blank"><i class="fa-solid fa-globe"></i></a></h4>
                 <div class="sub-positions">
                     <div class="marketing">
-                        <h5>Digital Marketing Specialist for collaboration with CEMCOD <a href="https://cemcod.org" target="_blank" class="sub-position-link"><i class="fa-solid fa-globe"></i></a></h5>
+                        <h5>Digital Marketing Specialist for collaboration with CEMCOD <a href="https://cemcod.org" target="_blank" class="sub-position-link"><i class="fa-solid fa-globe"></i></a>: Sept 2021 - Dec 2021</h5>
                         <li>Design social media graphics and organize social media campaigns for NGO in Uganda successfully increasing engagement and awareness of media literacy by 20%</li>
                         <li>Collaborated with the UX/UI design team to improve website design</li>
                     </div>
                     <div class="workshops">
-                        <h5>Workshop Member for Youth Engagement and Design Portfolio</h5>
+                        <h5>Workshop Member for Youth Engagement and Design Portfolio: Jan 2022 - Aug 2022</h5>
                         <li>Assisted in planning and carrying out a workshop in collaboration with the Engineering Change Lab on engineering mindset and ethics for 20+ university students</li>
-                        <li>Organized workshop about water consumption for high school students, virtually delivering to 3 classes of approximately 25 students each</li>
+                        <li>Organized workshop about water consumption and scarcity for high school students, virtually delivering to 3 classes of approximately 25 students each</li>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+
+    <!-- Projects -->
     <div class="main" id="projects">
         <h1>PROJECTS</h1>
-        <div class="capstone">
+        <div class="capstone" id="capstone">
             <h3>Capstone Design Project: Mechanical and Materials Co-lead @ UW</h3>
             <p><strong>Skills:</strong> Autodesk Fusion 360, mechanical design, budget management, experimental design, presentation skills</p>
             <p>
@@ -242,7 +287,7 @@
                 <img src="images/mapthesystem.jpeg" class="mapthesystem__img">
             </div>
         </div>
-        <div class="tuhh">
+        <div class="tuhh" id="tuhh">
             <h3>Publication @ TUHH</h3>
             <p><strong>Skills:</strong> Python, literature reviews, geotechnical lab tests</p>
             <div class="tuhh-content">
@@ -269,7 +314,7 @@
                 </div>
             </div>
         </div>
-        <div class="ewb-cemcod">
+        <div class="ewb-cemcod" id="ewb">
             <h3>Graphic Design @ EWB UW X CEMCOD</h3>
             <p><strong>Skills:</strong> Python, literature reviews, geotechnical lab tests</p>
             <div class="ewb-content">
@@ -296,8 +341,10 @@
         </div>
     </div>
 
+    <!-- Volunteer and travel -->
     <div class="main" id="workaway">
         <h2>VOLUNTEER TRAVEL</h2>
+        <div class="trustedhousesitters" id="housesitting">
         <h3>TrustedHousesitters</h3>
             <div class="housesitters-content">
                 <p>
@@ -334,7 +381,8 @@
                     
                 </div>
             </div>
-
+        </div>
+        <div class="wwoof" id="wwoof">
         <h3>WWOOF</h3>
             <div class="wwoof-content">
                 <p>
@@ -384,7 +432,10 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
+
+    <!-- Fun pictures of stuff -->
     <div class="main" id="fun">
         <h1>ADVENTURES</h1>
         <p>
@@ -429,6 +480,7 @@
         </div>
     </div>
 
+    <!-- Contact info -->
     <div class="main" id="contact">
         <h3>CONTACT INFO</h3>
         <div class="social__media__ft">
