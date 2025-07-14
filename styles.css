@@ -70,11 +70,6 @@ video{
     max-width: 300px;
 }
 
-li span{
-    position: relative;
-    left
-}
-
 /* So that all sections look the same *//* So that all sections look the same */
 .main{
     position: relative;
@@ -219,7 +214,7 @@ li span{
 }
 
 .navbar__links i{
-    margin-top: 5px;
+    margin-top: 2.5px;
     margin-left: 10px;
 }
 
@@ -251,8 +246,8 @@ li span{
   color: #3b0172;
   text-decoration: none;
   display: block;
-  cursor: pointer;
   margin: 5px;
+  cursor: pointer;
 }
 
 .dropdown-content a:hover {
@@ -539,6 +534,10 @@ li span{
 }
 
 /* Volunteer Travel Section *//* Volunteer Travel Section *//* Volunteer Travel Section */
+.main#workaway h3 i{
+    color: #393939;
+}
+
 .housesitting-content{
     justify-content: center;
 }
@@ -631,8 +630,23 @@ li span{
     height:auto;
 }
 
-.lacumbre-mobile{
+.heidis{
+    margin-bottom: 20px;
+}
+
+.ravens-pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ravens__img{
     width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 /* Adventures *//* Adventures *//* Adventures *//* Adventures */
@@ -996,6 +1010,10 @@ li span{
     .lacumbre,
     .elbolson{
         max-width: 100%;
+    }
+
+    .ravens-pics{
+        flex-direction: column;
     }
 
     .coolpics{
