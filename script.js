@@ -12,3 +12,44 @@ document.addEventListener('click', function(e) {
         menuLinks.classList.remove('active')
     }
 })
+
+// document.addEventListener('contextmenu', function(e) {
+//             e.preventDefault();
+//         });
+
+const scrollContainer = document.querySelector(".rrr-gallery");
+const nextbtn = document.querySelector("#nextbtn");
+const backbtn = document.querySelector("#backbtn");
+
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+})
+
+
+function getScrollDistance() {
+    if (window.innerWidth <= 768) {
+        // Mobile: scroll by one "column" or smaller amount
+        return 300;  
+    } else {
+        // Desktop: scroll by full gallery width
+        return 875;  
+    }
+}
+
+nextbtn.addEventListener("click", () => {
+    scrollContainer.scrollBy({
+        left: getScrollDistance(),
+        behavior: "smooth"
+    });
+});
+
+backbtn.addEventListener("click", () => {
+    scrollContainer.scrollBy({
+        left: -getScrollDistance(),
+        behavior: "smooth"
+    });
+});
+
+
+
