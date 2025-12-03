@@ -25,8 +25,7 @@ body{
     overflow-x: hidden;
     color:#393939 !important;
     font-size: 1rem;
-    /* pointer-events: none;
-    user-select: none; */
+    user-select: none; 
 }
 
 a, iframe, embed{
@@ -67,7 +66,7 @@ figcaption{
 }
 
 video{
-    max-width: 300px;
+    max-width: 500px;
 }
 
 /* So that all sections look the same *//* So that all sections look the same */
@@ -505,6 +504,14 @@ video{
     object-fit: cover;
 }
 
+.ewb-cemcod a{
+    color: #393939;
+}
+
+.ewb-cemcod a:hover{
+    color: #3b0172;
+}
+
 .ewb-content{
     display: flex;
     flex-direction: row-reverse;
@@ -538,6 +545,76 @@ video{
     width: 300px;
     position: relative;
     object-fit: cover;
+}
+
+.rrr-web a{
+    color:#393939;
+}
+
+.rrr-web a:hover{
+    color:#3b0172;
+}
+
+.rrr-gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    gap: 0;
+}
+
+.rrr-gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+    margin: 0 auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.rrr-gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.rrr-gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.rrr-gallery div img,
+.rrr-gallery div video
+{
+    width: 100%;
+    max-height: 500px;
+}
+
+.rrr-gallery div img:hover,
+.rrr-gallery div video:hover{
+    scale: 1.05;
+}
+
+.rrr-gallery span video.web-screen{
+    max-width: none;
+    height: auto;
+}
+
+#backbtn, #nextbtn{
+    width: 30px;
+    cursor: pointer;
+    margin: 80px;
+}
+
+#backbtn:hover{
+    content: url("images/RRR_content/back-purple.png");
+} 
+
+#nextbtn:hover{
+    content: url("images/RRR_content/next-purple.png");
 }
 
 /* Volunteer Travel Section *//* Volunteer Travel Section *//* Volunteer Travel Section */
@@ -952,15 +1029,10 @@ video{
         padding: 10px;
     }
 
-
     .capstone-content {
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    }
-
-    .vid iframe{
-        width: 100%;
     }
 
     .mapthesystem__img {
@@ -1000,6 +1072,23 @@ video{
     .media2__img {
     width: 100%;
     height: auto;
+    }
+
+    .rrr-gallery-wrap{
+        margin: 60px;
+    }
+
+    .rrr-gallery div{
+        width: 400px;
+    }
+
+    #backbtn,
+    #nextbtn {
+        display: none;
+    }
+
+    .rrr-gallery::-webkit-scrollbar{
+    display: block;
     }
 
     .housesitting-content,
@@ -1375,9 +1464,5 @@ video{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; 
-    }
-    
-    .vid iframe{
-        width: 100%;
     }
 }
