@@ -29,11 +29,11 @@ scrollContainer.addEventListener("wheel", (evt) => {
 
 function getScrollDistance() {
     if (window.innerWidth <= 768) {
-        // Mobile: scroll by one "column" or smaller amount
+        // Mobile: scroll
         return 300;  
     } else {
         // Desktop: scroll by full gallery width
-        return 875;  
+        return 895;  
     }
 }
 
